@@ -10,13 +10,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val points = arrayOf(10, 6, 15, 23, 17)
+        val num1 = 100
+        val num2 = 0
+        var ans = 0
 
-        for (i in points) {
-            Log.d("kotlintest", i.toString())
+        try {
+            ans = num1 / num2
+        } catch (e: Exception) {
+            Log.d("kotlintest", "0で割ろうとしました")
+            Log.d("kotlintest", e.message)
+        } finally {
+            Log.d("kotlintest", "ans = " + ans.toString())
 
         }
     }
 }
+
+
 
 
