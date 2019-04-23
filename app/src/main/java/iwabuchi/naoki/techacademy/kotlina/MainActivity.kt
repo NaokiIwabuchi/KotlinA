@@ -10,17 +10,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        for (i in 1 until 6) {
-            Log.d("kotlintest", "for文の" + i + "回目")
+        for (i in 1 ..3) {
+            Log.d("kotlintest", "演算子の" + i + "回目")
         }
+        //12から3つ飛ばし
+        for (i in 12 downTo 0 step 3)
+            Log.d("kotlintest", "downTo関数の" + i + "回目")
 
-        var num = 1
-
-        while (num < 6) {
-            Log.d("kotlintest", "While文の" + num + "回目")
-            num++
         }
     }
-}
+
 
 
