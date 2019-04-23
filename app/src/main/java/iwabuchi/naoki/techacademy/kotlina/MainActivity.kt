@@ -10,16 +10,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val num = 75
+        val drink = 4
 
-        if (num >= 90) {
-            Log.d("kotlintest", "優")
-        } else if (num >= 75) {
-            Log.d("kotlintest", "良")
-        } else if (num >= 60) {
-            Log.d("kotlintest", "可")
-        } else {
-            Log.d("kotlintest", "不可")
+        when (drink) {
+            0 -> {
+                Log.d("kotlintest", "コーヒーを注文しました")
+            }
+            1 -> Log.d("kotlintest", "紅茶を注文しました")
+            2 -> Log.d("kotlintest", "ミルクを注文しました")
+            3 -> Log.d("kotlintest", "ケーキを注文しました")
+            else -> Log.d("kotlintest", "オーダーミスです")
         }
     }
 }
