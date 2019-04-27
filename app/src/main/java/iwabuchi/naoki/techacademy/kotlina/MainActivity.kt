@@ -10,21 +10,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val num1 = 100
-        val num2 = 0
-        var ans = 0
-
-        try {
-            ans = num1 / num2
-        } catch (e: Exception) {
-            Log.d("kotlintest", "0で割ろうとしました")
-            Log.d("kotlintest", e.message)
-        } finally {
-            Log.d("kotlintest", "ans = " + ans.toString())
+        var sum = 0
+        for (i in 1..10) {
+            sum += i
 
         }
+        Log.d("kotlintest", sum.toString())
+
     }
 }
+
 
 
 
