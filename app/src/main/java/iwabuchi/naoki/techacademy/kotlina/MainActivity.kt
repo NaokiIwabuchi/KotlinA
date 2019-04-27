@@ -10,19 +10,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val t = total(10,100)
-        Log.d("kotlintest", t.toString())
+        val lmb ={x: Int, y:Int -> x+y}
+        val z= lmb(100,200)
+        Log.d("kotlintest", z.toString())
     }
 
-    private fun total(first: Int,last: Int) :Int{
-        var sum = 0
-        for (i in first..last) {
-            sum += i
-        }
-         return sum
 
     }
-}
+
+
 
 
 
