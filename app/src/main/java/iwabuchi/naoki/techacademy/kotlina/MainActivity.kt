@@ -10,12 +10,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        total()
+        total(50,100)
     }
 
-    private fun total() {
+    private fun total(first: Int,last: Int) {
         var sum = 0
-        for (i in 1..10) {
+        for (i in first..last) {
             sum += i
         }
 
