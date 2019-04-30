@@ -11,23 +11,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val dog = Dog("ポチ",3)
-        dog.say()
-        Log.d("kotlintest", "犬の名前は" + dog.name  + "です")
-        Log.d("kotlintest", "犬の年齢は" + dog.age  + "です")
+        val human = Human("由美" ,23,  "映画鑑賞")
+        human.say()
+        human.think()
 
-        val dog2 = Dog("しろ",10)
-        dog2.say()
-        Log.d("kotlintest", "犬の名前は" + dog2.name  + "です")
-        Log.d("kotlintest", "犬の年齢は" + dog2.age  + "です")
+        val human2 = Human("直樹",25,  "読書")
+        human2.say()
+        human2.think()
+
 
     }
 
     }
-
-
-
-
 
 
 
